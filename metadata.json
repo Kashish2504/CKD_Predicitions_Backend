@@ -1,0 +1,108 @@
+{
+  "model_name": "Random Forest",
+  "accuracy": 1.0,
+  "features": [
+    "age",
+    "bp",
+    "sg",
+    "al",
+    "su",
+    "rbc",
+    "pc",
+    "pcc",
+    "ba",
+    "bgr",
+    "bu",
+    "sc",
+    "sod",
+    "pot",
+    "hemo",
+    "pcv",
+    "wc",
+    "rc",
+    "htn",
+    "dm",
+    "cad",
+    "appet",
+    "pe",
+    "ane"
+  ],
+  "categorical_columns": [
+    "rbc",
+    "pc",
+    "pcc",
+    "ba",
+    "htn",
+    "dm",
+    "cad",
+    "appet",
+    "pe",
+    "ane"
+  ],
+  "numerical_columns": [
+    "age",
+    "bp",
+    "sg",
+    "al",
+    "su",
+    "bgr",
+    "bu",
+    "sc",
+    "sod",
+    "pot",
+    "hemo",
+    "pcv",
+    "wc",
+    "rc"
+  ],
+  "label_encodings": {
+    "rbc": {
+      "abnormal": 0,
+      "normal": 1
+    },
+    "pc": {
+      "abnormal": 0,
+      "normal": 1
+    },
+    "pcc": {
+      "notpresent": 0,
+      "present": 1
+    },
+    "ba": {
+      "notpresent": 0,
+      "present": 1
+    },
+    "htn": {
+      "no": 0,
+      "yes": 1
+    },
+    "dm": {
+      "no": 0,
+      "yes": 1
+    },
+    "cad": {
+      "no": 0,
+      "yes": 1
+    },
+    "appet": {
+      "good": 0,
+      "poor": 1
+    },
+    "pe": {
+      "no": 0,
+      "yes": 1
+    },
+    "ane": {
+      "no": 0,
+      "yes": 1
+    }
+  },
+  "target_classes": [
+    "ckd",
+    "notckd"
+  ],
+  "target_map": {
+    "0": "ckd",
+    "1": "notckd"
+  }
+}
